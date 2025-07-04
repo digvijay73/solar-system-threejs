@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Solar System</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 8px;
+      max-height: 90vh;
+      overflow-y: auto;
+      font-family: sans-serif;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+    }
+    #pauseBtn {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔘 Controls -->
+  <div id="controls">
+    <h3>Planet Speeds</h3>
+    <div id="sliders"></div>
+    <button id="pauseBtn">⏸ Pause</button>
+  </div>
+
+  <!-- 🧠 THREE.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+  
+
+  <div id="tooltip" style="
+  position: absolute;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 5px;
+  pointer-events: none;
+  display: none;
+  font-size: 12px;
+"></div>
+
+  <!-- 📁 Main JavaScript -->
+  <script src="main.js"></script>
+
+
+
+
+</body>
+</html>
